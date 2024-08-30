@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px;
+            padding: 15px;
             padding-left: 40px;
             padding-right: 40px;
             z-index: 1020; 
@@ -28,25 +28,90 @@
             transition: background-color 0.5s, border-radius 0.5s, box-shadow 0.5s;
         }
 
-        .menu-icon {
+        .menu-option {
             display: flex; 
             gap: 20px; 
             opacity: 0;
-            
             transition: opacity 0.5s ease;
         }
 
-        .menu-icon div {
+        .menu-option div {
             cursor: pointer;
             font-size: 18px; 
-            color: white; 
-            transition: color 0.3s ease;
+            color: rgb(0, 0, 0); 
         }
 
-        .menu-icon div:hover{
+        
 
+        .menu-option > div:hover{
             color: goldenrod;
         }
+
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            padding: 10px;
+            z-index: 1;
+            border-radius: 4px;
+
+            
+        }
+        
+        .dropdown-content div {
+            color: rgb(0, 0, 0);
+            padding: 5px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+            transition: border-bottom-color 0.3s ease;
+        }
+        
+        .dropdown-content div:hover {
+            
+            border-bottom-color: goldenrod;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+        
+        /* Adjust existing styles */
+        .menu-icon {
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .menu-icon div {
+            cursor: pointer;
+            font-size: 18px;
+            color: black;
+            transition: color 0.3s ease;
+        }
+        
+        .menu-icon div:hover {
+            color: goldenrod;
+        }
+        
+        .navbar.scrolled .menu-icon div {
+            color: #000;
+        }
+        
+        .navbar.scrolled .menu-icon {
+            opacity: 1;
+        }
+        
         
         
 
@@ -58,9 +123,10 @@
         }
 
         .datestable{
-            width: 75%;
+            width: 85%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 15px;
         }
         .datestable th, .datestable td {
             padding: 12px;
@@ -122,7 +188,7 @@
             top: 0;
             z-index: 1000; 
             height:100vh;
-            margin-top: -100px;
+            margin-top: -70px;
             margin-bottom: 0;
         }
 
@@ -133,7 +199,7 @@
             z-index: 1008;
             top: -8vh; 
             margin-bottom: 0;
-            height: 200vh;
+            height: 250vh;
         }
 
         .gb-image {
@@ -144,13 +210,14 @@
         .gb-text {
             color: #ffffff; 
             animation: fadeIn 4s ease;
-            font-size: 40px;
+            font-size: 35px;
+            padding-top:10px;
         }
 
         .gb-text2 {
             color: #ffffff; 
             animation: fadeIn 6s ease;
-            font-size:30px;
+            font-size:24px;
         }
 
         @keyframes fadeIn {
@@ -185,59 +252,34 @@
     }
 
     .enrollment-lines {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        
-        margin-top: 20px;
-        justify-content: center;
-        
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        font-size: 26px;
-        padding-top: 100px;
-        padding-bottom: 200px;
+        padding: 100px 60px 200px 60px;
         background-color: #231f20;
         border-top-left-radius: 15%;
         color: white;
     }
-
-    .speaker-1, .speaker-4, .speaker-5{
-
-        display: inline-block;
-        height: 300px;
-        width: 70%;
-        background-color: darkblue;
+    .speakers{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-        color: white;
-        font-size: 24px;
-        margin: 10px 0 10px 80px;
-        padding: 10px;
-
+        flex-wrap: wrap;
+        gap:20px;
     }
-
-    .speaker-2, .speaker-3, .speaker-6 {
-
-        display: inline-block;
-        height: 230px;
-        width: 70%;
-        background-color: darkblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-        color: white;
-        font-size: 24px;
-        margin: 10px 0 10px 80px;
-        padding: 10px;
+    .speakertext {
+        flex: 1 1 calc(50% - 20px);
+        padding: 20px;
+        text-align: left;
+        box-sizing: border-box; /* Ensures padding is included in the width */
+    box-shadow: 0 4px 8px rgba(221, 207, 207, 0.1); /* Bottom shadow */
     }
-
+    .speakerimg {
+        flex: 1 1 calc(50% - 20px);
+        padding: 20px;
+        text-align: left;
+    }
+    .speakertext, .speakerimg h5 {
+        font-size:20px;
+    }
+    .speakerimg img{
+        width:100%;
+    }
     .faculty {
         border-top-right-radius: 7%;
         background-color: white;
