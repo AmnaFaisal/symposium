@@ -1,3 +1,8 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .poster-page{
     display:flex;
     flex-direction: column;
@@ -21,13 +26,14 @@
     font-weight: 300;
 }
 .navbar {
-    background-color: white;
+    background-color: #430608;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    
     top: 0;
     border-bottom-right-radius: 20%;
+    padding:10px 10px;
 }
 
 .logo img {
@@ -37,12 +43,13 @@
 .menu-option {
     display: flex; 
     gap: 20px;
+    color:white;
 }
 
 .menu-option div {
     cursor: pointer;
     font-size: 18px; 
-    color: rgb(0, 0, 0); 
+   color:white;
 }
 
 

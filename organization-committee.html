@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <div class="navbar">
         <div class="logo">
             <a href="index.html">
                 <img src="images/golden_logo.png" alt="Logo">
@@ -30,16 +30,15 @@
             <div class="dropdown">
                 Submissions
                 <div class="dropdown-content">
-                    <div onclick="scrollToRegistration()" > Register </div>
-                    <div> Poster Template </div>
+                    <span onclick="window.location.href='index.html'"><div>Register</div></span>
+                    <span onclick="window.location.href='poster_template.html'"><div> Poster Template </div></span>
                     <span onclick="window.location.href='accepted-papers.html'"><div> Accepted Paper </div></span>
                 </div>
             </div>
     
             <span onclick="window.location.href='program.html'"><div> Program </div></span>
-            <div onclick="scrollToFooter()">Contact</div>
         </div>
-    </nav>
+    </div>
     <div class="org-com-page">
         <div class="heading1">Organization Committee</div>
         <div style="width:65%;">
