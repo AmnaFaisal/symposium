@@ -1,8 +1,11 @@
-
         body {
             margin: 0;
             padding: 0;
             font-family: 'Verdana', sans-serif;
+        }
+        html{
+            margin:0;
+            padding:0;
         }
 
         /* Add these styles for the button */
@@ -291,6 +294,12 @@
         border-top-left-radius: 15%;
         color: white;
     }
+    .enrollment-lines2 {
+        padding: 100px 60px 200px 60px;
+        background-color: #231f20;
+        border-top-left-radius: 15%;
+        color: white;
+    }
     @media only screen and (max-width:850px) {
         .speakers {
             display:none;
@@ -346,13 +355,17 @@
             display: flex;
             padding: 20px;
             flex-direction: row;
+            flex-wrap: wrap;
             /*gap:500px;*/
             justify-content: space-between;
             
         }
+      
+        
         .logo-sponsors{
             width:auto;
-            
+            padding-top: 10px;
+            padding-bottom: 10px;
             height: 100px;
 
 
@@ -360,6 +373,7 @@
         .logo-sponsors img{
             width: 100%;
             height: 100%;
+            
         }
         .logo img{
             height: 100%;
@@ -452,16 +466,16 @@
             text-decoration-color: #9a0c0c;
         }
         .footer {
-            background-color: #231f20;
+            background: linear-gradient(to bottom, #430608, #9a0c0c);
             padding: 20px;
             text-align: center;
-            color:snow;
+            color:white;
             padding-top:60px;
-            padding-bottom: 60px;
+            padding-bottom: 120px;
             cursor:context-menu;
             z-index: 1012;
-            border-top-left-radius: 10%;
-            margin-bottom: 0;
+            border-top-right-radius: 10%;
+            margin-top: -60px;
             
         }
 
