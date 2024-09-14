@@ -367,6 +367,7 @@
             padding-top: 10px;
             padding-bottom: 10px;
             height: 100px;
+            
 
 
         }
@@ -466,7 +467,7 @@
             text-decoration-color: #9a0c0c;
         }
         .footer {
-            background: linear-gradient(to bottom, #430608, #9a0c0c);
+            background: #231f20;
             padding: 20px;
             text-align: center;
             color:white;
