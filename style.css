@@ -183,12 +183,6 @@
             .registration{
                 width:100%;
             }
-            .unilogos-sponsor{
-                display: flex;
-                padding: 20px;
-                flex-direction: column;
-                
-            }
         }
         .scope{
             padding-top: 40px;
@@ -309,6 +303,47 @@
             gap:40px;
             flex-direction: column;
         }
+        .unilogos-sponsor{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            
+            justify-content: center;
+            
+        }
+        .logo-sponsors {
+            flex: 0 0 50%; 
+            padding: 15px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+          }
+        
+        .wninety{
+            width:80%;
+            height:auto;
+        }
+        .whundred{
+            width:80%;
+            height:auto;
+        }
+        .wsixty{
+            width:60%;
+            height:auto;
+        }
+        .wfiftyfive{
+            width:50%;
+            height:auto;
+        }
+        .wsevenfive {
+            width:70%;
+            height:auto;
+        }
+        .whundredten{ width:70%;
+            height:auto;} 
+        .wsixtyfive{ width:70%;
+            height:auto;}
+       
     }
     @media only screen and (min-width:851px) {
     .speakers{
@@ -319,6 +354,46 @@
     .speakers-small{
         display:none;
     }
+    .unilogos-sponsor{
+        display: flex;
+        flex-wrap: wrap;
+        /*gap:500px;
+         padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;*/   
+    }
+    .logo-sponsors {
+        flex: 0 0 16.66%; /* 100% / 6 = 16.66% width for each image */
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+      }
+    
+      .logo-sponsors img {
+        height:auto;
+      }
+    .wninety{
+        width:90%;
+    }
+    .whundred{
+        width:100%;
+    }
+    .wsixty{
+        width:60%;
+    }
+    .wfiftyfive{
+        width:55%;
+    }
+    .wsevenfive{
+        width:75%;
+    }
+    .whundredten{
+        width:110%;
+    }
+    .wsixtyfive{
+        width:65%;
+    }
 }
     .speakertext {
         flex: 1 1 calc(50% - 20px);
@@ -328,7 +403,6 @@
     }
     .speakerimg {
         flex: 1 1 calc(50% - 20px);
-        
         text-align: center;
         
     }
@@ -338,6 +412,7 @@
     .speakerimg img{
         width:auto;
         height:90%;
+        border-radius: 5%;
     }
     .faculty {
         border-top-right-radius: 7%;
@@ -351,28 +426,9 @@
             font-size: 32px;
         }
 
-        .unilogos-sponsor{
-            display: flex;
-           
-            flex-wrap: wrap;
-            /*gap:500px;
-             padding: 20px;
-            flex-direction: row;
-            justify-content: space-between;*/   
-        }
- 
-        .unilogos-sponsor .logo-sponsors {
-            flex: 0 0 16.66%; /* 100% / 6 = 16.66% width for each image */
-            box-sizing: border-box;
-            padding: 10px;
-            text-align: center;
-          }
         
-          .logo-sponsors img {
-            max-width: 100%;
-            height: auto; /* Ensures images are responsive */
-            display: block;
-          }
+ 
+        
       
         
        
