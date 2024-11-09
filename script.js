@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
     var menuIcon = document.querySelector('.menu-option');
     var logoImage = document.querySelector('.logo img');
-    
+    var hamburgermenu = document.querySelector('.hamburgermenu');
     
     var scrollThreshold = 425; 
     
@@ -16,60 +16,13 @@ window.addEventListener('scroll', function() {
         logoImage.src = "images/logo.png";
     }
 });
-
-
-
-     function countUp(elementId, target, duration) {
-            let start = 0;
-            const increment = target / (duration / 10); // Update every 10ms
-            const counterElement = document.getElementById(elementId);
-            
-            function updateCounter() {
-                start += increment;
-                if (start >= target) {
-                    counterElement.textContent = target;
-                } else {
-                    counterElement.textContent = Math.floor(start);
-                    setTimeout(updateCounter, 10);
-                }
-            }
-
-            updateCounter();
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const counterphd = document.getElementById('counterphd');
-            const counterms = document.getElementById('counterms');
-            const counteralumini = document.getElementById('counteralumini');
-            
-            const phdCount = parseInt("{{ phd_count }}", 10); 
-            const msCount = parseInt("{{ master_count }}", 10); 
-            const aluminiCount = parseInt("{{ alumini_count }}", 10);
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if (entry.target.id === 'counterphd') {
-                            countUp('counterphd', phdCount, 2000); 
-                        } else if (entry.target.id === 'counterms') {
-                            countUp('counterms', msCount, 2000); 
-                        } else if (entry.target.id === 'counteralumini') {
-                            countUp('counteralumini', aluminiCount, 2000); 
-                        }
-                        observer.unobserve(entry.target); 
-                    }
-                });
-            });
-
-            observer.observe(counterphd);
-            observer.observe(counterms);
-            observer.observe(counteralumini);
-        });
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
         var scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
         var menuIcon = document.querySelector('.menu-icon svg');
         var logoImage = document.querySelector('.logo img');
+        var hamburgermenu = document.querySelector('.hamburgermenu');
+
 
         if (scrollPercentage > 13) {
             navbar.style.backgroundColor = '#ffffff';
@@ -85,11 +38,9 @@ window.addEventListener('scroll', function() {
             logoImage.src = "images/logo.png";
         }
     });
-    function toggleMenu() {
-            var overlay = document.getElementById('overlay');
-            overlay.style.display = (overlay.style.display === 'none' || overlay.style.display === '') ? 'flex' : 'none';
-        }
 
+
+    
         function closeOverlay() {
             var overlay = document.getElementById('overlay');
             overlay.style.display = 'none';
@@ -111,4 +62,10 @@ window.addEventListener('scroll', function() {
             window.scrollTo({ top: topPosition, behavior: 'smooth' });
         }
         
+        function toggleMenu() {
+            const menu = document.getElementById("dropdown-menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+        
        
+              

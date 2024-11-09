@@ -18,7 +18,7 @@
                 <img src="images/logo.png" alt="Logo">
             </a>
         </div>
-        <div class="menu-option">
+        <div class="menu-option"><!--big screen-->
             <span onclick="window.location.href='posters.html'"><div> Posters</div></span>
             
             <div class="dropdown">
@@ -43,11 +43,50 @@
             <span onclick="window.location.href='program.html'"><div> Program </div></span>
             <div onclick="scrollToFooter()">Contact</div>
         </div>
+        <div><!--small screen-->
+            <!-- Hamburger Menu Button -->
+            <div class="hamburgermenu" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div id="dropdown-menu" class="menu-dropdown">
+                <span onclick="window.location.href='posters.html'"><div>Posters</div></span>
+                
+                <div class="dropdown">
+                    <div>Committee</div>
+                    <div class="dropdown-content">
+                        <span onclick="window.location.href='organization-committee.html'">
+                            <div>Organization Committee</div>
+                        </span>
+                        <span onclick="window.location.href='scientific-committee.html'">
+                            <div>Scientific Committee</div>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <div>Submissions</div>
+                    <div class="dropdown-content">
+                        <div onclick="scrollToRegistration()">Register</div>
+                        <span onclick="window.location.href='poster_template.html'">
+                            <div>Poster Template</div>
+                        </span>
+                        <span onclick="window.location.href='accepted-papers.html'">
+                            <div>Accepted Papers</div>
+                        </span>
+                    </div>
+                </div>
+
+                <span onclick="window.location.href='program.html'"><div>Program</div></span>
+                <div onclick="scrollToFooter()">&nbsp Contact</div>
+            </div>
+
+        </div>
     </nav>
-    </div>
 
     <div class="gradient-background">
-        <img class="gb-image" style="width:120px;" src=" images/logo.png" alt="Logo">
+        <img class="gb-image" src=" images/logo.png" alt="Logo">
         <h1 class="gb-text">Taylor's School of Computer Science</h1>
         
         <h3 class="gb-text2">International Postgraduate Computer Science Research Symposium 13<sup>th</sup> & 14<sup>th</sup> November 2024</h3>
@@ -83,15 +122,15 @@
             <table class="datestable">
                 <tr>
                     <td>Submission deadline</td>
-                    <td>25<sup>th</sup> October 2024</td>
+                    <td>30<sup>th</sup> October 2024</td>
                 </tr>
                 <tr>
                     <td>Notification of acceptance</td>
-                    <td>3<sup>rd</sup> November 2024</td>
+                    <td>9<sup>th</sup> November 2024</td>
                 </tr>
                 <tr>
                     <td>Submission of camera-ready papers</td>
-                    <td>7<sup>th</sup> November 2024</td>
+                    <td>11<sup>th</sup> November 2024</td>
                 </tr>
                 <tr>
                     <td>Conference Date</td>
@@ -116,7 +155,7 @@
                 </br>
                 <a href="https://forms.gle/CUHt4PsCHS7rwaGH9 " style="padding-top: 200px; color:#9a0c0c;"> Click here to fill out the form. </a>
                 </br>
-                We look forward to welcoming you to this global gathering of minds.
+                <span style="color:goldenrod; font-weight:bold;">Registrations are now closed!</span>
                 
             <div class="scope">
                 <p class="map-text">Scope</p>
@@ -144,19 +183,18 @@
         </div>
         </div>
        
-        <div class="faculty-enrollement">
-        <div class="enrollment-lines">
+        <div class="enrollment-lines2">
             <p style="font-size: 30px;">Keynote Speakers</p>
             <div class="speakers">
-            <div class="speakertext">
+            
+                <div class="speakertext">
                 <h5>Keynote Speaker </h5>
-                <p style="font-size:16px;">I am a Reader at the School of Computer Science & Informatics at Cardiff University. I led the “Supervisory Control and Data Acquisition Systems Cyber Security Lifecycle (SCADA-CSL)” project, funded by Airbus Endeavr Wales, where I developed a SCADA Cyber Security, Safety, and Risk (CSSR) graphical extension for BPMN 2.0 and a SCADA system dependency model. In 2020-2021, I led a project funded by NCSC and RISCS on cybersecurity decision-making by SMEs. I was awarded an EPSRC grant in 2021 to develop a framework for cybersecurity playbooks enhancing CNI resilience. I also lead cyber skills education and am passionate about equality and diversity in cybersecurity.</p>
+                <p style="font-size:16px;">Dr. Yulia Cherdantseva: I am a Reader at the School of Computer Science & Informatics at Cardiff University. I led the “Supervisory Control and Data Acquisition Systems Cyber Security Lifecycle (SCADA-CSL)” project, funded by Airbus Endeavr Wales, where I developed a SCADA Cyber Security, Safety, and Risk (CSSR) graphical extension for BPMN 2.0 and a SCADA system dependency model. In 2020-2021, I led a project funded by NCSC and RISCS on cybersecurity decision-making by SMEs. I was awarded an EPSRC grant in 2021 to develop a framework for cybersecurity playbooks enhancing CNI resilience. I also lead cyber skills education and am passionate about equality and diversity in cybersecurity.</p>
             </div>
-
             <div class="speakerimg"> <img src="images/keynote1.PNG"> </div>
 
-            <div class="speakerimg"> <img src="images/keynote2.PNG"> </div>
 
+            <div class="speakerimg"> <img src="images/keynote2.PNG"> </div>
             <div class="speakertext">
                 <h5>Keynote Speaker </h5>
                 <p style="font-size:16px;">Dr. Fathi Amsaad (Senior Member, IEEE) is an Assistant Professor in the Department of Computer Science and Engineering, with a joint appointment in Biomedical, Industrial, and Human Factors Engineering at Wright State University, Dayton, OH. He earned his Ph.D. in Engineering, specializing in Computer Science and Engineering, from the University of Toledo in 2017. Dr. Amsaad directs the SMART Cybersecurity Research Lab at Joshi Research Center. His research focuses on Cyber and Physical System Security, specializing in Hardware-Oriented Security, including cryptographic hardware, counterfeit detection, secure SoC design, and side-channel attack countermeasures.</p>
@@ -164,123 +202,136 @@
 
             <div class="speakertext">
                 <h5>Keynote Speaker </h5>
-                <p style="font-size:16px;">Professor Dr. David Asirvatham is the Executive Dean of the Faculty of Innovation and Technology at Taylor’s University, Malaysia. With over 30 years of experience in lecturing and managing ICT projects, his research interests include digital neural networks, e-learning technologies, big data analytics, and AI. He has held numerous leadership roles, including Director of the Centre for Information Technology at the University of Malaya. Dr. Asirvatham has a Ph.D. from Multimedia University and an M.Sc. from Brunel University, UK.</p>
+                <p style="font-size:16px;">Georg is the Co-Founder and Chair of Juwai-IQI, the largest proptech group in South East Asia with more than 30,000 sales agents.  He is non-executive Chair of Spacetalk (ASX:SPA), Director of Centrepoint Alliance (ASX:CAF), the Prop Tech Group (ASX:PTG) and BUTN (ASX:BTN). He is Senior Advisor of brioHR.com, South East Asia’s fastest growing HR platform and madeComfy.com, one of the most innovative short term and holiday rental platforms. Georg was previously Executive Chair of iCarAsia, the number 1 online automotive marketplace for SE Asia (carlist.my, one2car.com, mobil123.com) until its acquisition by carsome.com. He was also Managing Director / CEO of the iProperty Group until its sale to REA Group in the biggest online takeover in SE Asia at that point in time. He was non-executive Director of Mitula Group, Managing Director / CEO of LJ Hooker Group and Group CFO at REA Group. Georg also worked for KPMG, Deutsche Bank and McKinsey&Company.</p>
             </div>
-
-            <div class="speakerimg"> <img src="images/keynote3.PNG">  </div>
+            <div class="speakerimg"> <img src="images/keynote3.jpeg">  </div>
+            
+            <div class="speakerimg"> <img src="images/keynote4.jpeg">  </div>
+            <div class="speakertext">
+                <h5>Keynote Speaker </h5>
+                <p style="font-size:16px;">Dr. Guandong Xu is a Professor at UTS specializing in data mining, machine learning, and social computing. He leads research centers focused on smart technology and data science. With over 240 published papers and numerous awards, he is recognized for his contributions to data science and analytics. Dr. Xu also holds leadership roles in major academic journals and conferences. He is a Fellow of both the IET (UK) and the ACS (Australia).</p>
             </div>
-        
+            
+           </div>
+        </div>
+            
         <!--smaller screens-->
             <div class="speakers-small">
-            <div>
+            <div class="enrollment-lines1">
+            <p style="font-size: 24px;">Keynote Speakers</p>
+            <div class="speak">
                 <div class="speakerimg"> <img src="images/keynote1.PNG"> </div>
             <div class="speakertext">
                 <h5>Keynote Speaker </h5>
-                <p style="font-size:16px;">Professor Dr. Noor Zaman Jhanjhi is a distinguished Computer Science Professor at Taylor’s University, Malaysia. He serves as the Program Director for Postgraduate Research. Recognized among the world’s top 2% scientists in 2022 and 2023, he has over 700 research publications and numerous international patents. Dr. Jhanjhi has received multiple accolades, including the Vice Chancellor’s Award, the Most Cited Researcher award at Taylor’s University, and the Outstanding Researcher Award. His expertise spans Cybersecurity, IoT security, and Software Engineering.</p>
+                <p style="font-size:16px;">Dr. Yulia Cherdantseva: I am a Reader at the School of Computer Science & Informatics at Cardiff University. I led the “Supervisory Control and Data Acquisition Systems Cyber Security Lifecycle (SCADA-CSL)” project, funded by Airbus Endeavr Wales, where I developed a SCADA Cyber Security, Safety, and Risk (CSSR) graphical extension for BPMN 2.0 and a SCADA system dependency model. In 2020-2021, I led a project funded by NCSC and RISCS on cybersecurity decision-making by SMEs. I was awarded an EPSRC grant in 2021 to develop a framework for cybersecurity playbooks enhancing CNI resilience. I also lead cyber skills education and am passionate about equality and diversity in cybersecurity.</p>
             </div>
             </div>
-            <div>
+            <div class="speak">
                 <div class="speakerimg"> <img src="images/keynote2.PNG"> </div>
 
             <div class="speakertext">
                 <h5>Keynote Speaker </h5>
-                <p style="font-size:16px;">Professor Dr. Sayan Kumar Ray is the Head of the School of Computer Science at Taylor’s University, Malaysia. With a Ph.D. in Computer Science from the University of Canterbury, New Zealand, his research focuses on 5G/6G networks, IoT applications in disaster management and healthcare, and dynamic spectrum sharing. Dr. Ray has over 2,000 citations and numerous publications. He has held various academic leadership roles, including Chair of the Manukau and Tech Park Campus Research Committee in New Zealand.</p>
+                <p style="font-size:16px;">Dr. Fathi Amsaad (Senior Member, IEEE) is an Assistant Professor in the Department of Computer Science and Engineering, with a joint appointment in Biomedical, Industrial, and Human Factors Engineering at Wright State University, Dayton, OH. He earned his Ph.D. in Engineering, specializing in Computer Science and Engineering, from the University of Toledo in 2017. Dr. Amsaad directs the SMART Cybersecurity Research Lab at Joshi Research Center. His research focuses on Cyber and Physical System Security, specializing in Hardware-Oriented Security, including cryptographic hardware, counterfeit detection, secure SoC design, and side-channel attack countermeasures.</p>
             </div>
             </div>
-            <div>
-                <div class="speakerimg"> <img src="images/keynote3.PNG">  </div>
+             <div class="speak">
+                <div class="speakerimg"> <img src="images/keynote3.jpeg">  </div>
                 <div class="speakertext">
                     <h5>Keynote Speaker </h5>
-                    <p style="font-size:16px;">Professor Dr. David Asirvatham is the Executive Dean of the Faculty of Innovation and Technology at Taylor’s University, Malaysia. With over 30 years of experience in lecturing and managing ICT projects, his research interests include digital neural networks, e-learning technologies, big data analytics, and AI. He has held numerous leadership roles, including Director of the Centre for Information Technology at the University of Malaya. Dr. Asirvatham has a Ph.D. from Multimedia University and an M.Sc. from Brunel University, UK.</p>
+                    <p style="font-size:16px;">Georg is the Co-Founder and Chair of Juwai-IQI, the largest proptech group in South East Asia with more than 30,000 sales agents.  He is non-executive Chair of Spacetalk (ASX:SPA), Director of Centrepoint Alliance (ASX:CAF), the Prop Tech Group (ASX:PTG) and BUTN (ASX:BTN). He is Senior Advisor of brioHR.com, South East Asia’s fastest growing HR platform and madeComfy.com, one of the most innovative short term and holiday rental platforms. Georg was previously Executive Chair of iCarAsia, the number 1 online automotive marketplace for SE Asia (carlist.my, one2car.com, mobil123.com) until its acquisition by carsome.com. He was also Managing Director / CEO of the iProperty Group until its sale to REA Group in the biggest online takeover in SE Asia at that point in time. He was non-executive Director of Mitula Group, Managing Director / CEO of LJ Hooker Group and Group CFO at REA Group. Georg also worked for KPMG, Deutsche Bank and McKinsey&Company.</p>
+                </div>
+            </div>
+            <div class="speak">
+                <div class="speakerimg"> <img src="images/keynote4.jpeg">  </div>
+                <div class="speakertext">
+                    <h5>Keynote Speaker </h5>
+                    <p style="font-size:16px;">Dr. Guandong Xu is a Professor at UTS specializing in data mining, machine learning, and social computing. He leads research centers focused on smart technology and data science. With over 240 published papers and numerous awards, he is recognized for his contributions to data science and analytics. Dr. Xu also holds leadership roles in major academic journals and conferences. He is a Fellow of both the IET (UK) and the ACS (Australia).</p>
                 </div>
             </div>
             </div>
         </div>
-        </div>
         <div class="faculty">
-        <h2 class="faculty-heading"> Collaborating Universities </h2>
-        <br>
-
-        <div class="unilogos-sponsor">
-            
-            <div class="logo-sponsors">
-                <img class="wninety" src="images/uwe.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="whundred" src="images/utp.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="wsixty"  src="images/cu.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="whundred" src="images/nu-1.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="wsixty"  src="images/nu-2.PNG">
-            </div>    
-            <div class="logo-sponsors">
-                <img class="wninety" src="images/rul.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="whundred" src="images/wsu.png">
-            </div>
-            <div class="logo-sponsors">
-                <img class="wfiftyfive" src="images/nu.png">
-            </div>
-            <div class="logo-sponsors">
-                <img class="whundred" src="images/abiu.png">
-            </div>
-            <div class="logo-sponsors">
-                <img class="wsevenfive"  src="images/numl.PNG">
-                
-            </div>
-            <div class="logo-sponsors">
-                <img class="whundredten" src="images/iium.PNG">
-            </div>
-            <div class="logo-sponsors">
-                <img class="wsixtyfive" src="images/gnit.png">
-            </div>
-            <!--<div  class="logo-sponsors">
-                <img style='width:40%; height: auto;' src="images/gnit.png">
-            </div>-->
-            
-        </div>
-        <div style="border-top: 1px solid gray;">
-            <p style="font-size: 30px;">Sponsors</p>
+            <h2 class="faculty-heading"> Collaborating Universities </h2>
+            <br>
+    
             <div class="unilogos-sponsor">
                 
                 <div class="logo-sponsors">
-                    <img style="width:200px; height:250px;" src="images/inlead.jpeg">
+                    <img class="wninety" src="images/uwe.PNG">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="wsixty"  src="images/cu.PNG">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="whundred" src="images/nu-1.PNG">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="wsixty"  src="images/nu-2.PNG">
+                </div>    
+                <div class="logo-sponsors">
+                    <img class="wninety" src="images/rul.PNG">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="whundred" src="images/wsu.png">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="wfiftyfive" src="images/nu.png">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="whundred" src="images/abiu.png">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="wsevenfive"  src="images/numl.PNG">
+                    
+                </div>
+                <div class="logo-sponsors">
+                    <img class="whundredten" src="images/iium.PNG">
+                </div>
+                <div class="logo-sponsors">
+                    <img class="wsixtyfive" src="images/gnit.png">
+                </div>
+                
+            </div>
+            <div style="border-top: 1px solid gray;">
+                <p style="font-size: 30px;">Sponsors</p>
+                <div class="unilogos-sponsor">
+                    
+                    <div class="logo-sponsors">
+                        <img style="width:200px; height:250px;" src="images/inlead.jpeg">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <footer class="footer">
-        <img src="images/logo.png" style="width:100px;" alt="Taylors Logo">
-        <h3 style="padding-top:20px;">Taylor's School of Computer Science</h3>
-        <p>Postgraduate degree programs</p>
-    
-        <div class="contact-us">
-            <div class="contact-info">
-                <h4>STAY INFORMED</h4>
-                <i class="fas fa-map-marker-alt"></i><p style="width:50%;">No. 1, Jalan Taylor's, 47500 Subang Jaya, Selangor, Malaysia</p>
-                <p>+603-5629 5000</p>
+        </div><!--faculty-->
+
+        <footer class="footer">
+            <img src="images/logo.png" style="width:100px;" alt="Taylors Logo">
+            <h3 style="padding-top:20px;">Taylor's School of Computer Science</h3>
+            <p>Postgraduate degree programs</p>
+        
+            <div class="contact-us">
+                <div class="contact-info">
+                    <h4>FIND US AT</h4>
+                    <p>No. 1, Jalan Taylor's, 47500 Subang Jaya, Selangor, Malaysia</p>
+                    <p>+603-5629 5000</p>
+                </div>
+        
+                <div class="site-info">
+                    <h4>CONTACT US</h4>
+                    <p>Prof. Noor Zaman Jhanjhi</p>
+                    <p>noorzaman.jhanjhi@taylors.edu.my</p>
+                    <p>info@ipcrs.com</p>
+                    <br>
+                    <h4>SITE DEVELOPED BY</h4>
+                    <p>Amna Faisal (0360943@sd.taylors.edu.my)</p>
+                    <p>Master of Computer Science</p>
+                    <p>Supervisor: Professor Dr. Noor Zaman Jhanjhi</p>
+                </div>
             </div>
+        </footer>
+        </div><!--real main content-->
+      
     
-            <div class="site-info">
-                <h4>CONTACT US</h4>
-                <p>Prof. Noor Zaman Jhanjhi</p>
-                <p>noorzaman.jhanjhi@taylors.edu.my</p>
-                <p>info@ipcrs.com</p>
-                <br>
-                <h5>Site developed by:</h5>
-                <p>Amna Faisal (0360943@sd.taylors.edu.my)</p>
-                <p>Master of Computer Science</p>
-                <p>Supervisor: Professor Dr. Noor Zaman Jhanjhi</p>
-            </div>
-        </div>
-    </footer>
+
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
